@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="action.php">
+      <label for="firstname">Name</label>
+      <input type="text" name="firstname" />
+      <br />
+      <label for="lastname">SurName</label>
+      <input type="text" name="lastname" max="5" />
+      <br />
+      <label for="password">passowrd</label>
+      <input name="passowrd" type="password" maxlength="8" />
+
+      <label for="phone">Phone</label>
+      <input type="number" name="phone" max="100" min="0" step="10" />
+      <br />
+      <label>Email</label>
+      <input type="email" name="email" autocomplete />
+      <br />
+      <label>Gender</label>
+      <label for="gender">Male </label>
+      <input type="radio" value="male" name="gender" />
+
+      <label for="gender">FeMale </label>
+      <input type="radio" value="female" name="gender1" />
+      <label for="gender">3rd</label>
+      <input type="radio" value="3rdgender" name="gender2" />
+
+      <label for="country">Country</label>
+      <br />
+      <select name="country">
+        <optgroup label="asia">
+          <option value="india">India</option>
+          <option value="pak">pakistan</option>
+          <option value="sri">Srilanka</option>
+          <option value="bg">bangladesh</option>
+        </optgroup>
+        <optgroup label="european">
+          <option value="Uk">UK</option>
+          <option value="france">france</option>
+          <option value="germany">germany</option>
+        </optgroup>
+        <optgroup label="african">
+          <option value="Egypt">Egypt</option>
+          <option value="sa">South africa</option>
+        </optgroup>
+      </select>
+
+      <br />
+      <label for="favfood">Fav Food</label>
+
+      <input list="favfood" type="text" name="favfood" />
+
+      <datalist id="favfood">
+        <option value="burger"></option>
+        <option value="sandwich"></option>
+        <option value="frnech fries"></option>
+
+        <option value="milkshake"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
